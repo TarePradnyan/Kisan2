@@ -121,6 +121,7 @@ def community():
     return render_template("comm.html", name=session.get("name"), pincode=session.get("pincode"))
 
 
+
 @app.route("/market/", methods=["POST", "GET"])
 def market():
     return render_template("market.html")
